@@ -25,6 +25,8 @@
 .ledger-table td.note-cell { background: #fff1cf; color: #8a620a; font-weight: 700; }
 .ledger-table td.clickable-note { cursor: pointer; box-shadow: inset 0 0 0 1px #edc970; }
 .ledger-table td.clickable-note:hover { background: #ffe6a4; }
+.ledger-table td.exception { background: #fff5f5; color: #c62828; font-weight: 700; }
+.ledger-table td.exception.clickable-note:hover { background: #ffe5e5; }
 .note-viewer { min-height: 96px; white-space: pre-wrap; border: 1px solid #e2e8eb; border-radius: 4px; background: #fafcfc; padding: 12px; color: #33414d; font-size: 13px; line-height: 1.7; }
 .rotation-panel { margin-bottom: 18px; }
 .rotation-order { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
