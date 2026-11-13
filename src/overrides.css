@@ -1,0 +1,42 @@
+.content.link-content { margin-left: 0; max-width: 1160px; }
+.group-link { display: block; overflow-wrap: anywhere; margin: 14px 0; padding: 10px; background: #eaf3f1; color: #0c6857; border-radius: 4px; font-size: 12px; }
+.link-action { margin-top: 8px; }
+.field-label { display: grid; gap: 6px; margin: 13px 0; color: #52626d; font-size: 12px; font-weight: 650; }
+.field-label input, .field-label select, .cycle-editor select, .group-form-row input { border: 1px solid #d4dde2; border-radius: 4px; padding: 7px 8px; background: #fff; color: #32414c; }
+.field-label input, .field-label select { width: 100%; }
+.cycle-editor { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-top: 16px; }
+.cycle-editor label { color: #687782; font-size: 11px; }
+.cycle-editor select { display: block; width: 100%; margin-top: 5px; }
+.form-actions { display: flex; justify-content: flex-end; gap: 9px; margin-top: 20px; }
+.modal-backdrop { position: fixed; inset: 0; z-index: 12; background: rgba(18, 34, 44, .38); display: grid; place-items: center; padding: 20px; }
+.modal { width: min(440px, 100%); padding: 20px; background: #fff; border: 1px solid #dce3e7; border-radius: 6px; box-shadow: 0 20px 50px rgba(12, 28, 36, .2); }
+.group-form-row { display: grid; grid-template-columns: 12px 1fr 120px; align-items: center; gap: 9px; margin: 11px 0; }
+.group-form-row label { display: grid; grid-template-columns: 54px 1fr; align-items: center; gap: 5px; font-size: 11px; color: #667681; }
+.modal-note { margin: 0 0 15px; color: #64737d; font-size: 12px; line-height: 1.6; }
+.weekday-note { color: #64737d; font-size: 12px; }
+.attendance-note { display: grid; gap: 6px; margin-top: 16px; color: #52626d; font-size: 12px; font-weight: 650; }
+.attendance-note textarea { min-height: 72px; width: 100%; resize: vertical; border: 1px solid #d4dde2; border-radius: 4px; padding: 8px; color: #32414c; font: inherit; font-size: 12px; }
+.attendance-note textarea:disabled { background: #f4f6f7; color: #7b8993; }
+.field-label textarea { min-height: 100px; width: 100%; resize: vertical; border: 1px solid #d4dde2; border-radius: 4px; padding: 8px; color: #32414c; font: inherit; font-size: 12px; }
+.member-row { grid-template-columns: minmax(125px, 1fr) 148px 32px 84px; }
+.member-row .has-note { border-color: #0e7c66; color: #0e7c66; background: #eaf3f1; }
+.status-add { display: flex; gap: 8px; margin: 14px 0; }
+.status-add input { min-width: 0; flex: 1; border: 1px solid #d4dde2; border-radius: 4px; padding: 8px; }
+.status-list { border-top: 1px solid #e5eaed; }
+.status-list > div { display: grid; grid-template-columns: 1fr 72px 32px; align-items: center; gap: 8px; min-height: 44px; border-bottom: 1px solid #e5eaed; font-size: 13px; }
+.status-list small { color: #7b8993; font-size: 11px; }
+.ledger-table td.note-cell { background: #fff1cf; color: #8a620a; font-weight: 700; }
+.ledger-table td.clickable-note { cursor: pointer; box-shadow: inset 0 0 0 1px #edc970; }
+.ledger-table td.clickable-note:hover { background: #ffe6a4; }
+.note-viewer { min-height: 96px; white-space: pre-wrap; border: 1px solid #e2e8eb; border-radius: 4px; background: #fafcfc; padding: 12px; color: #33414d; font-size: 13px; line-height: 1.7; }
+.rotation-panel { margin-bottom: 18px; }
+.rotation-order { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+.rotation-order > div { display: grid; grid-template-columns: 24px 10px 1fr; gap: 7px; align-items: center; padding: 12px; border: 1px solid #e1e8ea; border-radius: 5px; }
+.rotation-order small { grid-column: 1 / -1; color: #74838d; font-size: 11px; }
+.order-badge { display: grid; place-items: center; width: 22px; height: 22px; border-radius: 50%; background: #e6f2ef; color: #0e7c66; font-size: 12px; font-weight: 700; }
+.group-form-row { grid-template-columns: 12px 1fr 110px 150px; }
+@media (max-width: 720px) { .rotation-order { grid-template-columns: 1fr 1fr; }.group-form-row { grid-template-columns: 12px 1fr; }.group-form-row label, .weekday-note { grid-column: 2; } }
+.people-group:last-child { border-right: 0; }
+.person-row { grid-template-columns: 30px 70px 1fr 32px 32px; }
+.danger-button:hover { border-color: #b85222; color: #b85222; }
+@media (max-width: 720px) { .cycle-editor { grid-template-columns: repeat(2, 1fr); } }
