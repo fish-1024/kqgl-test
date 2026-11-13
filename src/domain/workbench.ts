@@ -45,10 +45,6 @@ export function submitDailyRecord(input: { records: DailyRecord[]; groupId: stri
   return updateRecord(input.records, input.groupId, input.date, (record) => ({ ...record, status: 'submitted' }))
 }
 
-export function confirmDailyRecord(records: DailyRecord[], groupId: string, date: string): Result<DailyRecord[]> {
-  return updateRecord(records, groupId, date, (record) => ({ ...record, status: 'confirmed' }))
-}
-
 export function addStatusOption(options: StatusOption[], label: string, value: string): Result<StatusOption[]> {
   const normalized = label.trim()
   if (!normalized) return fail('请填写状态名称')

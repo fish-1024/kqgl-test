@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { addStatusOption, confirmDailyRecord, ensureDailyRecord, removeStatusOption, submitDailyRecord, updateEntryNote, updateEntryStatus, type DailyRecord } from './workbench'
+import { addStatusOption, ensureDailyRecord, removeStatusOption, submitDailyRecord, updateEntryNote, updateEntryStatus, type DailyRecord } from './workbench'
 
 const today = '2026-11-13'
 const people = [{ id: 'jia-1', groupId: 'jia', activeFrom: '2026-01-01' }]
@@ -32,7 +32,6 @@ describe('attendance workbench', () => {
     expect(removed).toMatchObject({ ok: true })
     if (!removed.ok) return
     expect(removed.value.records[0].entries[0].status).toBe('normal')
-    expect(confirmDailyRecord(removed.value.records, 'jia', today)).toMatchObject({ ok: true })
     expect(addStatusOption(removed.value.options, '外出', 'fieldwork')).toMatchObject({ ok: true })
   })
 })
